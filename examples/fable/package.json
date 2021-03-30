@@ -5,9 +5,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "dotnet fable .",
-    "test": ""
+    "test": "dotnet fable . -o ./dist/tests --run node ./dist/tests/Program.js",
+    "watch-test": "dotnet fable watch . -o ./dist/tests --run nodemon ./dist/tests/Program.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }

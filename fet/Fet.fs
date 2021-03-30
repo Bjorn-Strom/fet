@@ -29,6 +29,6 @@ namespace Fet
                     )
                 |> List.reduce (fun acc x -> {| Succeeded = acc.Succeeded + x.Succeeded; Failed = acc.Failed + x.Failed |})
 
-            printfn $"\nRan {stats.Succeeded + stats.Failed}"
+            printfn $"\nRan: {stats.Succeeded + stats.Failed}"
             printfn $"Succeeded: {stats.Succeeded}"
             printfn $"Failed: {stats.Failed}"

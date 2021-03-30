@@ -5,6 +5,7 @@
 
 ### fsharp ###
 .idea/
+dist/
 lib/debug
 lib/release
 Debug
@@ -16,6 +17,7 @@ bin
 *.exe
 !.paket/paket.bootstrapper.exe
 .ionide/
+node_modules/
 
 ### macOS ###
 # General

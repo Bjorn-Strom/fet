@@ -1,22 +1,25 @@
-open Fet
+namespace Example
 
-let tests =
-    let add a b = a + b
+    module Fable=
+        open Fet
 
-    testList "A list of tests" [
-        test "Strings are equal" <| fun () ->
-            let helloWorld = "Hello World"
-            Expect.equal "Hello World" helloWorld
+        let tests =
+            let add a b = a + b
 
-        test "Add 2 and 2 equals 4" <| fun () ->
-              let expected = 4
-              Expect.equal (add 2 2) expected
+            testList "A list of tests" [
+                test "Strings are equal" <| fun () ->
+                    let helloWorld = "Hello World"
+                    Expect.equal "Hello World" helloWorld
 
-        test "This test should fail" <| fun () ->
-            Expect.equal (3+3) 5
+                test "Add 2 and 2 equals 4" <| fun () ->
+                      let expected = 4
+                      Expect.equal (add 2 2) expected
 
-        test "Length of empty list should be 0" <| fun () ->
-            Expect.equal (List.length []) 0
-        ]
+                test "This test should fail" <| fun () ->
+                    Expect.equal (3+3) 5
 
-runTests [ tests ]
+                test "Length of empty list should be 0" <| fun () ->
+                    Expect.equal (List.length []) 0
+                ]
+
+        runTests [ tests ]
