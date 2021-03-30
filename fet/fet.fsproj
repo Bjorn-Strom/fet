@@ -15,6 +15,17 @@
   <ItemGroup>
     <Compile Include="Fet.fs" />
     <Content Include="*.fsproj; *.fs; *.js;" Exclude="**\*.fs.js" PackagePath="fable\" />
+    <Content Include="examples\dotnet\dotnet.fsproj" />
+    <Content Include="examples\dotnet\obj\dotnet.fsproj.nuget.dgspec.json" />
+    <Content Include="examples\dotnet\obj\dotnet.fsproj.nuget.g.props" />
+    <Content Include="examples\dotnet\obj\dotnet.fsproj.nuget.g.targets" />
+    <Content Include="examples\dotnet\obj\project.assets.json" />
+    <Content Include="examples\dotnet\obj\project.nuget.cache" />
+    <Content Remove="examples\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="examples\**" />
   </ItemGroup>
 
 </Project>
