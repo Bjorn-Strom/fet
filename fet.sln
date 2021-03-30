@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{28
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "dotnet", "examples\dotnet\dotnet.fsproj", "{CC467A06-646F-4564-9972-B8D158094839}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "fable", "examples\fable\fable.fsproj", "{16516777-270D-46A0-B3FB-AF5504161BEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,8 +48,21 @@ Global
 		{CC467A06-646F-4564-9972-B8D158094839}.Release|x64.Build.0 = Release|Any CPU
 		{CC467A06-646F-4564-9972-B8D158094839}.Release|x86.ActiveCfg = Release|Any CPU
 		{CC467A06-646F-4564-9972-B8D158094839}.Release|x86.Build.0 = Release|Any CPU
+		{16516777-270D-46A0-B3FB-AF5504161BEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16516777-270D-46A0-B3FB-AF5504161BEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16516777-270D-46A0-B3FB-AF5504161BEF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{16516777-270D-46A0-B3FB-AF5504161BEF}.Debug|x64.Build.0 = Debug|Any CPU
+		{16516777-270D-46A0-B3FB-AF5504161BEF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{16516777-270D-46A0-B3FB-AF5504161BEF}.Debug|x86.Build.0 = Debug|Any CPU
+		{16516777-270D-46A0-B3FB-AF5504161BEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16516777-270D-46A0-B3FB-AF5504161BEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16516777-270D-46A0-B3FB-AF5504161BEF}.Release|x64.ActiveCfg = Release|Any CPU
+		{16516777-270D-46A0-B3FB-AF5504161BEF}.Release|x64.Build.0 = Release|Any CPU
+		{16516777-270D-46A0-B3FB-AF5504161BEF}.Release|x86.ActiveCfg = Release|Any CPU
+		{16516777-270D-46A0-B3FB-AF5504161BEF}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CC467A06-646F-4564-9972-B8D158094839} = {28C0DB3A-D80E-4B0A-886E-470F266DB0FC}
+		{16516777-270D-46A0-B3FB-AF5504161BEF} = {28C0DB3A-D80E-4B0A-886E-470F266DB0FC}
 	EndGlobalSection
 EndGlobal
