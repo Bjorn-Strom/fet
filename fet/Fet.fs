@@ -1,17 +1,17 @@
 namespace Fet
 
     [<RequireQualifiedAccess>]
-    module expect =
+    module Expect =
         let equal (actual: 'a) (expected: 'a): unit =
             if actual <> expected then
                 failwith $"expected {actual} to be equal {expected}."
 
-    module test =
+    module Test =
         type TestList = { Name: string; Tests: (string * (unit -> unit)) list }
         let test (name: string) (f: unit -> unit) = name, f
         let testList (name: string) testList: TestList = { Name = name; Tests = testList}
 
-        let runAllTests (tests: TestList list) =
+        let runTests (tests: TestList list) =
             let stats =
                 tests
                 |> List.map (fun testList ->
