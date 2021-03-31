@@ -32,3 +32,4 @@ namespace Fet
             printfn $"\nRan: {stats.Succeeded + stats.Failed}"
             printfn $"Succeeded: {stats.Succeeded}"
             printfn $"Failed: {stats.Failed}"
+            stats.Failed
