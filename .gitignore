@@ -17,6 +17,8 @@ bin
 *.exe
 !.paket/paket.bootstrapper.exe
 .ionide/
+.config/
+.fake/
 node_modules/
 
 ### macOS ###
