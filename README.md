@@ -41,4 +41,5 @@ runTests [ tests; evenMoreTests ]
 Result:
 
 ![example](example.png)
+
 See more examples in the example folder.
