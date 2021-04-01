@@ -24,7 +24,7 @@ namespace Example
                 test "Length of empty list should be 0" <| fun () ->
                     Expect.equal (List.length []) 0
 
-                test "Length of 10 elemements should not be empty" <| fun () ->
+                test "Length of 10 elements should not be empty" <| fun () ->
                     Expect.equal (List.isEmpty [1..10]) false
                 ]
 

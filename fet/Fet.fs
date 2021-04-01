@@ -6,6 +6,7 @@ namespace Fet
             if actual <> expected then
                 failwith $"expected {actual} to be equal {expected}."
 
+    [<AutoOpen>]
     module Test =
         type TestList = { Name: string; Tests: (string * (unit -> unit)) list }
         let test (name: string) (f: unit -> unit) = name, f
@@ -32,4 +33,5 @@ namespace Fet
             printfn $"\nRan: {stats.Succeeded + stats.Failed}"
             printfn $"Succeeded: {stats.Succeeded}"
             printfn $"Failed: {stats.Failed}"
-            stats.Failed
+            if stats.Failed > 0 then
+                failwith $"Tests failed with {stats.Failed} errors."

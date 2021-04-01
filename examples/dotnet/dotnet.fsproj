@@ -10,8 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Fet" Version="0.0.3" />
+    <PackageReference Include="Fet" Version="0.0.7" />
   </ItemGroup>
-
 
 </Project>
