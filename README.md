@@ -1,7 +1,7 @@
 ## Fet - F# Easy test
 
 Sometimes you dont need a fully fledged testing suite.
-Sometimes you just want to do some assertions without having to use import a a big framework that might just get in your way.
+Sometimes you just want to do some assertions without having to import and use a big framework that might just get in your way.
 
 This is where `Fet` shines. It gets out of your way and lets you write tests fast.
 It works with both dotnet and fable so you don't need to import huge libraries like Mocha or Jest if you don't need them.
