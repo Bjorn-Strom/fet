@@ -3,7 +3,7 @@
 
 [![GitHub license](https://img.shields.io/github/license/Bjorn-Strom/fet?style=for-the-badge)](https://github.com/Bjorn-Strom/fet/blob/master/LICENSE.md) ![Nuget](https://img.shields.io/nuget/dt/fet?style=for-the-badge)
 
-### Fet - F# Easy test
+### Fet - F# Easy Test
 
 Sometimes you dont need a fully fledged testing suite.
 Sometimes you just want to do some assertions without having to import and use a big framework that might just get in your way.
