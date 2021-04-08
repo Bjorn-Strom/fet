@@ -1,4 +1,7 @@
-![logo](logo.png "Logo Title Text 1")
+<p align="center">
+  <img src="logo.png" />
+</p>
+
 <hr>
 
 [![GitHub license](https://img.shields.io/github/license/Bjorn-Strom/fet?style=for-the-badge)](https://github.com/Bjorn-Strom/fet/blob/master/LICENSE.md) ![Nuget](https://img.shields.io/nuget/dt/fet?style=for-the-badge)
