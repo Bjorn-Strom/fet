@@ -4,7 +4,7 @@ namespace Fet
     module Expect =
         let equal (actual: 'a) (expected: 'a): unit =
             if actual <> expected then
-                failwith $"expected {actual} to be equal {expected}."
+                failwith $"\n\texpected: \n\t\t{actual} \n\tto be equal: \n\t\t{expected}"
 
     [<AutoOpen>]
     module Test =

@@ -5,9 +5,9 @@
       <RepositoryUrl>https://github.com/Bjorn-Strom/Fet.git</RepositoryUrl>
       <PackageProjectUrl>https://github.com/Bjorn-Strom/Fet</PackageProjectUrl>
       <Authors>Bjørn-Ivar Strøm</Authors>
-      <Version>1.0.0</Version>
+      <Version>1.0.1</Version>
       <PackageLicenseUrl>https://github.com/Bjorn-Strom/Fet/blob/master/LICENSE.md</PackageLicenseUrl>
-      <TargetFramework>net5.0</TargetFramework>
+      <TargetFramework>netstandard2.0</TargetFramework>
       <OutputType>Library</OutputType>
       <AssemblyName>Fet</AssemblyName>
   </PropertyGroup>
