@@ -25,16 +25,13 @@ namespace Fet
             let testResults =
                 tests
                 |> List.map (fun testList ->
-                    //printfn "Test suite: %A" testList.Name
                     testList.Name, testList.Tests
                     |> Seq.map (fun (key, func)  ->
                         try
                             func ()
-                            //printfn $"\t\u2705  - {k}"
                             { Name = key; Message = None }
                         with
                         | e ->
-                            //printfn $"\t\u274c  - Error in test \"{k}\" failed with: {e.Message}"
                             { Name = key; Message = Some e.Message}
                     ))
 
@@ -46,7 +43,7 @@ namespace Fet
                 |> Seq.iter (fun (failed: Test) ->
                     if failed.Message.IsSome then 
                         printfn $"[FAIL] - {failed.Name}"
-                        printfn "%A" failed.Message.Value)
+                        printfn "%s" failed.Message.Value)
                 let total = Seq.length stats
                 let succeeded =
                     stats
@@ -56,15 +53,16 @@ namespace Fet
                 printfn $"Tests run: {total}, Passed: {succeeded}, Failed: {failed}"
                 printfn "")
 
-            let total = Seq.length testResults
+            let total =
+                testResults
+                |> Seq.collect snd
+                |> Seq.length
             let succeeded =
                 testResults
-                |> Seq.map snd
-                |> Seq.filter (fun (x: Test) -> x.Message.IsNone)
+                |> Seq.collect snd
+                |> Seq.filter (fun x -> x.Message.IsNone)
                 |> Seq.length
+            let failed = total - succeeded
 
-            printfn "Total tests run: {}, Passed: {}, Failed: {}"
-
-// TODO: Total count
-// TODO: Send verbose in command line to see all
-// TODO: XML thing?
+            printfn $"Total tests run: {total}, Passed: {succeeded}, Failed: {failed}"
+            failed

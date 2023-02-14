@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "dotnet fable . -o ./dist/tests --run node ./dist/tests/Program.js",
+    "test": "dotnet fable . -o ./dist/tests --noCache --run node ./dist/tests/Program.js",
     "watch-test": "dotnet fable watch . -o ./dist/tests --run nodemon ./dist/tests/Program.js"
   },
   "author": "",
