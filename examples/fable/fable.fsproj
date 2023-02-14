@@ -13,4 +13,8 @@
     <ProjectReference Include="..\..\fet\fet.fsproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Fable.Node" Version="1.2.0" />
+  </ItemGroup>
+
 </Project>
