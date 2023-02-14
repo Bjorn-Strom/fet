@@ -14,8 +14,6 @@ Sometimes you just want to do some assertions without having to import and use a
 This is where `Fet` shines. It gets out of your way and lets you write tests fast.
 It works with both dotnet and fable so you don't need to import huge libraries like Mocha or Jest if you don't need them.
 
-If any tests fail the runner will throw  an exception with the number of tests failed.
-
 ### Examples
 Define your tests with the `test` function.
 You put one more more of these in a `testList`.
@@ -47,7 +45,7 @@ let evenMoreTests =
 runTests [ tests; evenMoreTests ]
 ```
 Result:
-
-![example](example.png)
+Fail ![example](failed.png)
+Succeed ![example](succeeded.png)
 
 See more examples in the example folder.
