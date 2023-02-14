@@ -28,4 +28,3 @@ let evenMoreTests =
 [<EntryPoint>]
 let main _ =
     runTests [ tests; evenMoreTests ]
-    0

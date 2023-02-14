@@ -2,15 +2,16 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Include="Program.fs" />
   </ItemGroup>
 
+
   <ItemGroup>
-    <PackageReference Include="Fet" Version="1.0.0" />
+    <ProjectReference Include="..\..\fet\fet.fsproj" />
   </ItemGroup>
 
 </Project>

@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -10,7 +10,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Fet" Version="1.0.0" />
+    <ProjectReference Include="..\..\fet\fet.fsproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Fable.Node" Version="1.2.0" />
   </ItemGroup>
 
 </Project>

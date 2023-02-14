@@ -27,5 +27,6 @@ namespace Example
                 test "Length of 10 elements should not be empty" <| fun () ->
                     Expect.equal (List.isEmpty [1..10]) false
                 ]
-
-        runTests [ tests; evenMoreTests ]
+               
+        Node.Api.process.exit(runTests [ tests; evenMoreTests ])
+        
